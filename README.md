@@ -7,6 +7,6 @@
 4) Недостаток памяти исправил командой(выполнять на хосте) - `echo "vm.max_map_count=262144" >> /etc/sysctl.conf && sysctl -p` </br>
 
 ### Ответ на curl localhost:9200 </br>
-![screen](https://github.com/murzinvit/screen/blob/206ccda678374d1efa816bbb50e5a47857c7d363/Elastic_screen_curl_9200.png)
+![screen](https://github.com/murzinvit/screen/blob/7a1e0db8094655db237f06c9a3534b3478571282/Elastic_screen_curl_9200.png)
 
 #### Задача 2: </br>
