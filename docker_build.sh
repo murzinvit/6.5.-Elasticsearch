@@ -1,1 +1,1 @@
-docker build -t centos7/elasticsearch:latest .
+docker build -t murzinvit/elasticsearch:latest .
