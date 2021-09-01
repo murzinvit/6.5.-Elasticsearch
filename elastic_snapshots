@@ -1,0 +1,10 @@
+#### Регистрация папки snapshots в elasticsearch:
+---------------------------------------------------------------------------------------------------
+curl -XPUT 'http://localhost:9200/_snapshot/netology_backup' -H 'Content-Type: application/json' -d '{
+    "type": "fs",
+    "settings": {
+        "location": "netology_backup",
+        "compress": true
+    }
+}'
+---------------------------------------------------------------------------------------------------
