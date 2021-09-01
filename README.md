@@ -10,3 +10,8 @@
 ![screen](https://github.com/murzinvit/screen/blob/7a1e0db8094655db237f06c9a3534b3478571282/Elastic_screen_curl_9200.png)
 
 #### Задача 2: </br>
+Документация по запросам к Elasticsearch: [www.elastic.co/guide/en/elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices.html) </br>
+Запросы к Elastic можно отправлять через curl в cmd, или по http через браузер </br>
+Создать индекс можно запросом: [elastic_put](https://github.com/murzinvit/6.5_Elasticsearch/blob/3f12afa445fb49343759627298eb581b4ff94725/elastic_put) </br>
+Получить список индексов можно запросом: `curl -X GET "localhost:9200/_mapping"` </br>
+
