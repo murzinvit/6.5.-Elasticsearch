@@ -30,7 +30,8 @@
 6) Удалите индекс test и создайте индекс test-2. Приведите в ответе список индексов: </br>
 ![screen](https://github.com/murzinvit/screen/blob/9b1b28a0c889df53b8cb9a621bcc9b658e3cd6d4/Elastic_test2_result.jpg)
 7) Восстановите состояние кластера elasticsearch из snapshot, созданного ранее: </br>
-   Запрос: `curl -X POST "localhost:9200/_snapshot/netology_backup/snapshot_1/_restore?pretty"` </br>
+   Запрос для восстановления игдекса: [Index_restore](https://github.com/murzinvit/6.5_Elasticsearch/blob/35f05976ea063392f05154a86b2cdd26177c870d/Index_restore) </br>
+   [screen](https://github.com/murzinvit/screen/blob/88784c117128bdbf1e026db48b7dde461a25bb9f/Elastic_restore_result.jpg)
 
 
 
