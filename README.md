@@ -19,6 +19,11 @@
 Удаление всех индексов: `curl -X DELETE "localhost:9200/_all"` </br>
 
 #### Задача 3: </br>
+Папка для snashots: `mkdir -p /etc/elasticsearch/snapshots/netology_backup`
+Регистрация папки netology_backup: [запрос](https://github.com/murzinvit/6.5_Elasticsearch/blob/87c5e71858c17d87d7343685b15f4833add266bc/elastic_snapshots) </br>
+Результат выполнения запроса: </br>
+![Snap_screen](https://github.com/murzinvit/screen/blob/35d53d9be04d002bbbb63346d79a0e8441e93e32/Elastic_snapshots_result.jpg)
+
 
 
 
