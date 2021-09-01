@@ -1,3 +1,14 @@
+#### Запросы можно просто копировать и вставлять в консоль PuTTY:
+
+curl -X PUT "localhost:9200/ind-1?pretty" -H 'Content-Type: application/json' -d'
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0
+  }
+}
+'
+----------------------------------------------------------------------------------
 curl -X PUT "localhost:9200/ind-2?pretty" -H 'Content-Type: application/json' -d'
 {
   "settings": {
@@ -6,3 +17,17 @@ curl -X PUT "localhost:9200/ind-2?pretty" -H 'Content-Type: application/json' -d
   }
 }
 '
+----------------------------------------------------------------------------------
+curl -X PUT "localhost:9200/ind-3?pretty" -H 'Content-Type: application/json' -d'
+{
+  "settings": {
+    "number_of_shards": 4,
+    "number_of_replicas": 2
+  }
+}
+'
+----------------------------------------------------------------------------------
+curl -X GET "localhost:9200/_mapping"
+curl -X GET "localhost:9200/_stats?pretty"
+curl -X GET "localhost:9200/_cluster/health"
+curl -X DELETE "localhost:9200/_all"
