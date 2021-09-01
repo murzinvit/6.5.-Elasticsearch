@@ -1,0 +1,13 @@
+curl -X POST "localhost:9200/_snapshot/netology_backup/snapshot_1/_restore?pretty" -H 'Content-Type: application/json' -d'
+{
+  "indices": "test",
+  "ignore_unavailable": true,
+  "include_global_state": true,
+  "index_settings": {
+    "index.number_of_replicas": 0
+  },
+  "ignore_index_settings": [
+    "index.refresh_interval"
+  ]
+}
+'
